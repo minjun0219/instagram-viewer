@@ -1,0 +1,36 @@
+.thumbGrid {
+  box-sizing: padding-box;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 10px 0;
+
+  &::after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
+
+@media (max-width: 1000px) {
+  .thumbGrid {
+    width: 800px;
+  }
+}
+
+@media (max-width: 800px) {
+  .thumbGrid {
+    width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .thumbGrid {
+    width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .thumbGrid {
+    width: auto;
+  }
+}
