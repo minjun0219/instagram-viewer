@@ -15,8 +15,8 @@ module.exports = {
   devtool: 'cheap-module-source-map',
 
   entry: [
-    'babel-polyfill',
-    'react-hot-loader/patch',
+    require.resolve('babel-polyfill'),
+    require.resolve('react-hot-loader/patch'),
     require.resolve('webpack-dev-server/client') + '?/',
     require.resolve('webpack/hot/dev-server'),
     // 'react-dev-utils/webpackHotDevClient',
