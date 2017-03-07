@@ -17,7 +17,7 @@ export function fitSize(boxWidth, boxHeight, width, height) {
   };
 
   // Landscape
-  if (boxWidth > boxHeight) {
+	if (ratioWidth > ratioHeight) {
     if (height > ratioHeight) {
       size.width = maxWidth;
       size.height = ratioHeight;
@@ -27,8 +27,7 @@ export function fitSize(boxWidth, boxHeight, width, height) {
     }
   }
 
-  // Portrait
-  else if (boxWidth < boxHeight) {
+  else if (ratioWidth < ratioHeight) {
     if (width > ratioWidth) {
       size.width = ratioWidth;
       size.height = maxHeight;
@@ -36,11 +35,6 @@ export function fitSize(boxWidth, boxHeight, width, height) {
       size.width = maxWidth;
       size.height = ratioHeight;
     }
-  }
-
-  else {
-    size.width = ratioWidth;
-    size.height = ratioHeight;
   }
 
   size.top = boxHeight > ratioHeight ? ((boxHeight - size.height) / 2) : 0;
