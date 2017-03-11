@@ -5,4 +5,4 @@
 # INSTAGRAM_CLIENT_ID=<INSTAGRAM_CLIENT_ID>
 # INSTAGRAM_ACCESS_TOKEN=<INSTAGRAM_ACCESS_TOKEN>
 #####################################################
-web: npm run build && npm run build-server
+web: npm run build && npm run now-start
