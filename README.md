@@ -1,6 +1,6 @@
 # instagram-viewer-react
 
-Instagram Viewer React App - [Demo](https://instagram-viewer-react.herokuapp.com/)
+Instagram Viewer React App - [Demo](https://instagram-viewer-react-oabgtfhhqg.now.sh)
 
 ## Install
 
