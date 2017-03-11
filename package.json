@@ -15,7 +15,8 @@
     "start": "babel-node scripts/start.js",
     "build": "node scripts/build.js",
     "now-start": "babel-node scripts/server.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "test:coverage": "node scripts/test.js --coverage"
   },
   "jest": {
     "moduleNameMapper": {
@@ -25,7 +26,8 @@
       "src/**/*.js"
     ],
     "testPathIgnorePatterns": [
-      "<rootDir>[/\\\\](build|docs|node_modules|scripts)[/\\\\]"
+      "!istanbul-reports/lib/html/assets",
+      "<rootDir>[/\\\\](build|docs|node_modules|scripts|assets)[/\\\\]"
     ]
   },
   "dependencies": {

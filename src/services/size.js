@@ -1,4 +1,11 @@
-// image size fit
+/**
+ * image size fit
+ * @param  {number} boxWidth  박스 너비
+ * @param  {number} boxHeight 박스 높이
+ * @param  {number} width     원본 너비
+ * @param  {number} height    원본 높이
+ * @return {object}
+ */
 export function fitSize(boxWidth, boxHeight, width, height) {
 
   // 최대값
@@ -17,7 +24,7 @@ export function fitSize(boxWidth, boxHeight, width, height) {
   };
 
   // Landscape
-	if (ratioWidth > ratioHeight) {
+  if (ratioWidth > ratioHeight) {
     if (height > ratioHeight) {
       size.width = maxWidth;
       size.height = ratioHeight;
