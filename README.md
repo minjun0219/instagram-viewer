@@ -1,6 +1,6 @@
 # instagram-viewer-react
 
-Instagram Viewer React App - [Demo](https://instagram-viewer-react-oabgtfhhqg.now.sh)
+Instagram Viewer React App - [Demo](https://instagram-viewer-react.minjun.dev)
 
 ## Install
 
